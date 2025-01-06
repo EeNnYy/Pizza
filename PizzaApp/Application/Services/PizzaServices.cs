@@ -7,15 +7,18 @@ namespace Application.Services
     public class PizzaServices : IPizzaServices
     {
         private readonly IRepository _repository;   
+
         public PizzaServices(IRepository repository)
         {
             _repository = repository;
         }
+
         public bool AddPizza(Pizza pizza)
         {
             try
             {
                 _repository.CreatePizza(pizza);
+
                 return true;
             }
             catch (Exception)
@@ -45,7 +48,6 @@ namespace Application.Services
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
@@ -55,6 +57,7 @@ namespace Application.Services
             try
             {
                 _repository.DeletePizza(id);
+
                 return true;
             }
             catch (Exception)
@@ -68,6 +71,7 @@ namespace Application.Services
             try
             {
                 _repository.UpdatePizza(pizza);
+
                 return true;
             }
             catch (Exception)
