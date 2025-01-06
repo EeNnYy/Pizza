@@ -1,0 +1,10 @@
+﻿@model Domain.Models.Pizza
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<div class="Pizza-product-container">
+    <div class="my-flex-block">
+        <img class="DetailImage" src="/Images/@Model.Source" alt="@Model.Title" />
+        <p class="Title" href="/Home/Detail">@Model.Title</p>
+        <p class="Composition">@Model.Description</p>
+        <p class="Price">@Model.Price</p>
+    </div>
+</div>

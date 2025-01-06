@@ -1,0 +1,45 @@
+﻿@model List<Domain.Models.Pizza>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<div class="Pizza-product-container">
+    @foreach (var item in Model)
+    {
+        <div class="my-flex-block" data-id="@item.Id">
+            <img class="Image" data-id="@item.Id" data-src="@item.Source" src="/Images/@(item.Source ?? "DefaultImage.png")" alt="@item.Title" />
+            <a href="/Home/Detail/@item.Id" id="@item.Id" class="Title">@item.Title</a>
+            <p class="Composition">@item.Description</p>
+            <p class="Price">@item.Price</p>
+            <div class="CRUDButtons">
+                <img src="/Icons/Refresh.png" alt="Edit Pizza" class="RefreshButton" />
+                <img src="/Icons/Delete.png" alt="Delete Pizza" class="DeleteButton" />
+            </div>
+        </div>
+    }
+    <div class="my-flex-block-new">
+        <img src="/Icons/Create.png" alt="Add Pizza" class="AddButton" />
+        <span>Добавить новую пиццу</span>
+    </div>
+</div>
+<div class="modal-sql" style="display:none;">
+    <span class="ModalSQL-Close">&times;</span>
+    <h2>Добавить Пиццу</h2>
+    <label for="title">Название:</label>
+    <input type="text" id="title" name="title" required>
+    <p d="erro-message" class="error-message-title" style="display: none; color: red;">Пожалуйста, заполните поле выше.</p>
+    <label for="src">Название изображения:</label>
+    <input type="text" id="src" name="src">
+    <label for="description">Описание:</label>
+    <textarea id="description" name="description" required></textarea>
+    <p id="erro-message" class="error-message-description" style="display: none; color: red;">Пожалуйста, заполните поле выше.</p>
+    <label for="price">Цена:</label>
+    <input type="number" id="price" name="price" min="0" required>
+    <p d="erro-message" class="error-message-price" style="display: none; color: red;">Пожалуйста, заполните поле выше.</p>
+    <button type="button">Подтвердить</button>
+</div>
+
+<div class="Overlay" style="display:none;"></div>
+
+<div class="loading" style="display: none;">
+    <div class="spinner"></div>
+    <p>Загрузка...</p>
+</div>
