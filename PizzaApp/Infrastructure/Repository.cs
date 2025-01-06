@@ -34,6 +34,7 @@ namespace Infrastructure
                 };
                 _context.Pizzas.Add(pizzaEF);
                 _context.SaveChanges();
+
                 return true;
 
             }
@@ -49,15 +50,17 @@ namespace Infrastructure
             try
             {
                 var pizzaEF = _context.Pizzas.Find(id);
+
                 if (pizzaEF != null)
                 {
                     _context.Pizzas.Remove(pizzaEF);
                     _context.SaveChanges();
+
                     return true;
                 }
                 else
-                { 
-                    return false; 
+                {
+                    return false;
                 }
             }
             catch (Exception)
@@ -68,7 +71,7 @@ namespace Infrastructure
 
         public Pizza FindById(int id)
         {
-            var pizzaEF=_context.Pizzas.Find(id);
+            var pizzaEF = _context.Pizzas.Find(id);
             var pizza = new Pizza
             {
                 Title = pizzaEF.Title,
@@ -76,6 +79,7 @@ namespace Infrastructure
                 Price = pizzaEF.Price,
                 Source = pizzaEF.Source,
             };
+
             return pizza;
         }
 
@@ -83,15 +87,16 @@ namespace Infrastructure
         {
             var pizzaEntities = _context.Pizzas.ToList();
 
-       
+
             var pizzas = pizzaEntities.Select(entity => new Pizza
             {
                 Id = entity.Id,
                 Title = entity.Title,
                 Price = entity.Price,
-                Description= entity.Description,
+                Description = entity.Description,
                 Source = entity.Source,
             }).ToList();
+
             return pizzas;
         }
 
@@ -107,6 +112,7 @@ namespace Infrastructure
                     updatePizza.Source = pizza.Source;
                     updatePizza.Description = pizza.Description;
                     _context.SaveChanges();
+
                     return true;
                 }
                 else
@@ -116,7 +122,7 @@ namespace Infrastructure
             }
             catch (Exception)
             {
-                    return false ;
+                return false;
             }
         }
     }

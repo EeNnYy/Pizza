@@ -31,6 +31,7 @@ namespace PizzaApp.Controllers
         {
             var response = await _httpClient.GetAsync($"https://localhost:7228/api/pizza/{id}");
             var pizza = await response.Content.ReadFromJsonAsync<Pizza>();
+
             return View(pizza);
         }
 

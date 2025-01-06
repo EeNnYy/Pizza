@@ -14,18 +14,22 @@ namespace Web.Controllers
     public class PizzaController : ControllerBase
     {
         private readonly IPizzaServices _repositoryServices;
+
         public PizzaController(IPizzaServices repositoryServices, ILogger<PizzaController> logger)
         {
             _repositoryServices = repositoryServices;
         }
+
         [HttpGet]
         public ActionResult GetAllPizzas()
         {
             var pizzas = _repositoryServices.GetAllPizzas();
+
             if (pizzas == null)
             {
                 return NotFound("Пиццы не найдены");
             }
+
             return Ok(pizzas);
         }
 
@@ -33,10 +37,12 @@ namespace Web.Controllers
         public ActionResult PizzaById(int id)
         {
             var pizzaById = _repositoryServices.GetPizzaById(id);
+
             if (pizzaById == null)
             {
                 return NotFound("Пиццы не найдены");
             }
+
             return Ok(pizzaById);
         }
 
@@ -44,6 +50,7 @@ namespace Web.Controllers
         public ActionResult CreatePizza(Pizza pizza)
         {
             _repositoryServices.AddPizza(pizza);
+
             return Ok("Пицца успешно добавлена");
         }
 
@@ -59,6 +66,7 @@ namespace Web.Controllers
         public ActionResult DeletePizza(int id)
         {
             _repositoryServices.RemovePizza(id);
+
             return Ok("Пицца удалена!");
         }
 
