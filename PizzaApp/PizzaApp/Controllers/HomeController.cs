@@ -10,28 +10,23 @@ namespace PizzaApp.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly HttpClient _httpClient;
+        private readonly IPizzaServices _services;
 
 
-        public HomeController(ILogger<HomeController> logger,HttpClient httpClient)
+        public HomeController(ILogger<HomeController> logger, IPizzaServices services)
         {
             _logger = logger;
-            _httpClient = httpClient;
+            _services = services;   
         }
 
-        public async Task<IActionResult> IndexAsync()
+        public IActionResult Index()
         {
-            var response = await _httpClient.GetAsync("https://localhost:7228/api/pizza");
-            var pizzas = await response.Content.ReadFromJsonAsync<List<Pizza>>();
-
-            return View(pizzas);
+            return View();
         }
 
-        public async Task<IActionResult> Detail(int id)
-        {
-            var response = await _httpClient.GetAsync($"https://localhost:7228/api/pizza/{id}");
-            var pizza = await response.Content.ReadFromJsonAsync<Pizza>();
-
+        public IActionResult Detail(int id)
+        { 
+            var pizza= _services.GetPizzaById(id);
             return View(pizza);
         }
 
