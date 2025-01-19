@@ -1,10 +1,66 @@
-﻿$('.my-flex-block-new').off('click').on('click', AddButton);
-$('.DeleteButton').off('click').on('click', DeleteButton);
-$('.Image').off('click').off('click').on('click', function () {
+﻿GetPizzas();
+
+$(document).on('click', '.my-flex-block-new', AddButton);
+$(document).on('click', '.DeleteButton', DeleteButton);
+$(document).on('click', '.Image', function () {
     DetailPizza(this);
 });
-$('.RefreshButton').off('click').on('click', RefreshButton);
+$(document).on('click', '.RefreshButton', RefreshButton);
 
+function GetPizzas() {
+    $.ajax({
+        url: '/api/pizza',
+        type: 'GET',
+        success: function (pizzas) {
+            pizzas.forEach(function (pizza) {
+                const pizzaHtml = `
+                    <div class="my-flex-block" data-id="${pizza.id}">
+                        <img class="Image" data-id="${pizza.id}" src="/Images/${pizza.source || 'DefaultImage.png'}" alt="${pizza.title}" />
+                        <a href="/Home/Detail/${pizza.id}" id="${pizza.id}" class="Title">${pizza.title}</a>
+                        <p class="Composition">${pizza.description}</p>
+                        <p class="Price">${pizza.price}</p>
+                        <div class="CRUDButtons">
+                            <img src="/Icons/Refresh.png" alt="Edit Pizza" class="RefreshButton" />
+                            <img src="/Icons/Delete.png" alt="Delete Pizza" class="DeleteButton" />
+                        </div>
+                    </div>
+                `;
+                $(".Pizza-product-container").append(pizzaHtml);
+            });
+
+            const addPizzaHtml = `
+                <div class="my-flex-block-new">
+                    <img src="/Icons/Create.png" alt="Add Pizza" class="AddButton" />
+                    <span>Добавить новую пиццу</span>
+                </div>
+                <div class="modal-sql" style="display:none;">
+                <span class="ModalSQL-Close">&times;</span>
+                <h2>Добавить Пиццу</h2>
+                <label for="title">Название:</label>
+                <input type="text" id="title" name="title" required>
+                <p id="erro-message" class="error-message-title" style="display: none; color: red;">Пожалуйста, заполните поле выше.</p>
+                <label for="src">Название изображения:</label>
+                <input type="text" id="src" name="src">
+                <label for="description">Описание:</label>
+                <textarea id="description" name="description" required></textarea>
+                <p id="erro-message" class="error-message-description" style="display: none; color: red;">Пожалуйста, заполните поле выше.</p>
+                <label for="price">Цена:</label>
+                <input type="number" id="price" name="price" min="0" required>
+                <p d="erro-message" class="error-message-price" style="display: none; color: red;">Пожалуйста, заполните поле выше.</p>
+                <button type="button">Подтвердить</button>
+                </div>
+
+                <div class="Overlay" style="display:none;"></div>
+
+                <div class="loading" style="display: none;">
+                    <div class="spinner"></div>
+                    <p>Загрузка...</p>
+                </div>
+                `;
+            $(".Pizza-product-container").append(addPizzaHtml);
+        },
+    });
+}
 function AddButton() {
     resetModalFields();
     ShowModals();
@@ -16,7 +72,7 @@ function AddButton() {
 
 function AddPizzaSubmit() {
     if (Validation()) {
-        AddPizza(); 
+        AddPizza();
     }
 }
 function AddPizza() {
@@ -26,20 +82,20 @@ function AddPizza() {
         description: $('#description').val().trim(),
         price: Number($('#price').val().trim()),
     };
-    $('.loading').show(); 
-        $.ajax({
-            url: '/api/pizza', 
-            type: 'POST',
-            data: JSON.stringify(updatedPizza),
-            contentType: 'application/json',
-            success: function (message) {
-                $('.loading').hide(); 
-                alert(message);
-                $('.Overlay').hide();
-                $('.modal-sql').hide();
-                location.reload();
-            }
-        });
+    $('.loading').show();
+    $.ajax({
+        url: '/api/pizza',
+        type: 'POST',
+        data: JSON.stringify(updatedPizza),
+        contentType: 'application/json',
+        success: function (message) {
+            $('.loading').hide();
+            alert(message);
+            $('.Overlay').hide();
+            $('.modal-sql').hide();
+            location.reload();
+        }
+    });
 }
 function RefreshButton() {
     resetModalFields();
