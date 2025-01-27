@@ -50,3 +50,497 @@ Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30'
 SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
 FROM [Pizza] AS [p]
 Ошибка при получении пицц
+Now listening on: https://localhost:7228
+Now listening on: http://localhost:5191
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: E:\Portfolio\projects\Pizzas\PizzaAPI\PizzaApp\PizzaApp
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Ошибка при получении пицц
+Now listening on: https://localhost:7228
+Now listening on: http://localhost:5191
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: E:\Portfolio\projects\Pizzas\PizzaAPI\PizzaApp\PizzaApp
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (11ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (Size = 255), @p3='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Pizza] ([Description], [Price], [Source], [Title])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Pizza]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+WHERE [p].[Id] = @__p_0
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+WHERE [p].[Id] = @__p_0
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+WHERE [p].[Id] = @__p_0
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+WHERE [p].[Id] = @__p_0
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+WHERE [p].[Id] = @__p_0
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+WHERE [p].[Id] = @__p_0
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+WHERE [p].[Id] = @__p_0
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+WHERE [p].[Id] = @__p_0
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+WHERE [p].[Id] = @__p_0
+Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+WHERE [p].[Id] = @__p_0
+Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+WHERE [p].[Id] = @__p_0
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+WHERE [p].[Id] = @__p_0
+Now listening on: https://localhost:7228
+Now listening on: http://localhost:5191
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: E:\Portfolio\projects\Pizzas\PizzaAPI\PizzaApp\PizzaApp
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (10ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+WHERE [p].[Id] = @__p_0
+Now listening on: https://localhost:7228
+Now listening on: http://localhost:5191
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: E:\Portfolio\projects\Pizzas\PizzaAPI\PizzaApp\PizzaApp
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Now listening on: https://localhost:7228
+Now listening on: http://localhost:5191
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: E:\Portfolio\projects\Pizzas\PizzaAPI\PizzaApp\PizzaApp
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (14ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (Size = 255), @p3='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Pizza] ([Description], [Price], [Source], [Title])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Pizza]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+WHERE [p].[Id] = @__p_0
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+WHERE [p].[Id] = @__p_0
+Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Pizza]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Now listening on: https://localhost:7228
+Now listening on: http://localhost:5191
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: E:\Portfolio\projects\Pizzas\PizzaAPI\PizzaApp\PizzaApp
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (11ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+WHERE [p].[Id] = @__p_0
+Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Pizza]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (Size = 255), @p3='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Pizza] ([Description], [Price], [Source], [Title])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Pizza]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+WHERE [p].[Id] = @__p_0
+Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Pizza]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+WHERE [p].[Id] = @__p_0
+Now listening on: https://localhost:7228
+Now listening on: http://localhost:5191
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: E:\Portfolio\projects\Pizzas\PizzaAPI\PizzaApp\PizzaApp
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (11ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+WHERE [p].[Id] = @__p_0
+Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Pizza]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (Size = 255), @p3='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Pizza] ([Description], [Price], [Source], [Title])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Pizza]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+WHERE [p].[Id] = @__p_0
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+WHERE [p].[Id] = @__p_0
+Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Pizza]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Now listening on: https://localhost:7228
+Now listening on: http://localhost:5191
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: E:\Portfolio\projects\Pizzas\PizzaAPI\PizzaApp\PizzaApp
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (11ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (Size = 255), @p3='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Pizza] ([Description], [Price], [Source], [Title])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Pizza]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Now listening on: https://localhost:7228
+Now listening on: http://localhost:5191
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: E:\Portfolio\projects\Pizzas\PizzaAPI\PizzaApp\PizzaApp
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (21ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (11ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+WHERE [p].[Id] = @__p_0
+Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Pizza]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+WHERE [p].[Id] = @__p_0
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (Size = 255), @p3='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Pizza] ([Description], [Price], [Source], [Title])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Pizza]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+WHERE [p].[Id] = @__p_0
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+WHERE [p].[Id] = @__p_0
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+WHERE [p].[Id] = @__p_0
+Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Pizza]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Now listening on: https://localhost:7228
+Now listening on: http://localhost:5191
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: E:\Portfolio\projects\Pizzas\PizzaAPI\PizzaApp\PizzaApp
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (11ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (Size = 255), @p3='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Pizza] ([Description], [Price], [Source], [Title])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Pizza]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+WHERE [p].[Id] = @__p_0
+Now listening on: https://localhost:7228
+Now listening on: http://localhost:5191
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: E:\Portfolio\projects\Pizzas\PizzaAPI\PizzaApp\PizzaApp
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (11ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+WHERE [p].[Id] = @__p_0
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+WHERE [p].[Id] = @__p_0
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+WHERE [p].[Id] = @__p_0
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (Size = 255), @p3='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Pizza] ([Description], [Price], [Source], [Title])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Pizza]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Now listening on: https://localhost:7228
+Now listening on: http://localhost:5191
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: E:\Portfolio\projects\Pizzas\PizzaAPI\PizzaApp\PizzaApp
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Now listening on: https://localhost:7228
+Now listening on: http://localhost:5191
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: E:\Portfolio\projects\Pizzas\PizzaAPI\PizzaApp\PizzaApp
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (12ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+WHERE [p].[Id] = @__p_0
+Now listening on: https://localhost:7228
+Now listening on: http://localhost:5191
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: E:\Portfolio\projects\Pizzas\PizzaAPI\PizzaApp\PizzaApp
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (12ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+WHERE [p].[Id] = @__p_0
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+WHERE [p].[Id] = @__p_0
+Now listening on: https://localhost:7228
+Now listening on: http://localhost:5191
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: E:\Portfolio\projects\Pizzas\PizzaAPI\PizzaApp\PizzaApp
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (17ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+WHERE [p].[Id] = @__p_0
+Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Pizza]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
