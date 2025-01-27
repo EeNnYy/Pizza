@@ -28,7 +28,6 @@ namespace Web.Controllers
             try
             {
                 var pizzas = _repositoryServices.GetAllPizzas();
-                throw new Exception("Моя тестовая ошибка");
                 return Ok(pizzas);
             }
             catch (Exception ex) 

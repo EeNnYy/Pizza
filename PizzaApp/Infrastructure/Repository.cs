@@ -25,10 +25,11 @@ namespace Infrastructure
         {
             try
             {
+                if (pizza.Source == "") pizza.Source=null;
                 var pizzaEF = new PizzaEF
                 {
                     Title = pizza.Title,
-                    Description = pizza.Description,
+                    Description = pizza.Description, 
                     Price = pizza.Price,
                     Source = pizza.Source,
                 };
@@ -104,6 +105,7 @@ namespace Infrastructure
         {
             try
             {
+                if (pizza.Source == "") pizza.Source = null;
                 var updatePizza = _context.Pizzas.Find(pizza.Id);
                 if (updatePizza != null)
                 {
