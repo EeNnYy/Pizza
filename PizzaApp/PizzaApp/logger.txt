@@ -1,0 +1,52 @@
+Now listening on: https://localhost:7228
+Now listening on: http://localhost:5191
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: E:\Portfolio\projects\Pizzas\PizzaAPI\PizzaApp\PizzaApp
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (10ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+WHERE [p].[Id] = @__p_0
+Now listening on: https://localhost:7228
+Now listening on: http://localhost:5191
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: E:\Portfolio\projects\Pizzas\PizzaAPI\PizzaApp\PizzaApp
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (14ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+WHERE [p].[Id] = @__p_0
+Now listening on: https://localhost:7228
+Now listening on: http://localhost:5191
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: E:\Portfolio\projects\Pizzas\PizzaAPI\PizzaApp\PizzaApp
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Now listening on: https://localhost:7228
+Now listening on: http://localhost:5191
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: E:\Portfolio\projects\Pizzas\PizzaAPI\PizzaApp\PizzaApp
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Ошибка при получении пицц
+Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Price], [p].[Source], [p].[Title]
+FROM [Pizza] AS [p]
+Ошибка при получении пицц

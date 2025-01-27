@@ -1,4 +1,3 @@
-using Azure;
 using Domain.Interfaces;
 using Domain.Models;
 using Microsoft.AspNetCore.Mvc;

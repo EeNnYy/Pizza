@@ -14,60 +14,95 @@ namespace Web.Controllers
     public class PizzaController : ControllerBase
     {
         private readonly IPizzaServices _repositoryServices;
+        private readonly ILogger _logger;
 
         public PizzaController(IPizzaServices repositoryServices, ILogger<PizzaController> logger)
         {
             _repositoryServices = repositoryServices;
+            _logger = logger;
         }
-
+        
         [HttpGet]
         public ActionResult GetAllPizzas()
         {
-            var pizzas = _repositoryServices.GetAllPizzas();
-
-            if (pizzas == null)
+            try
             {
-                return NotFound("Пиццы не найдены");
+                var pizzas = _repositoryServices.GetAllPizzas();
+                throw new Exception("Моя тестовая ошибка");
+                return Ok(pizzas);
+            }
+            catch (Exception ex) 
+            {
+                _logger.LogError(ex, "Ошибка при получении пицц");
+                return BadRequest("Пиццы не найдены");
             }
 
-            return Ok(pizzas);
         }
 
         [HttpGet("{id}")]
         public ActionResult PizzaById(int id)
         {
-            var pizzaById = _repositoryServices.GetPizzaById(id);
-
-            if (pizzaById == null)
+            try
             {
-                return NotFound("Пиццы не найдены");
+                var pizzaById = _repositoryServices.GetPizzaById(id);
+                return Ok(pizzaById);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Ошибка при получении пиццы по id");
+                return BadRequest("Пицца не была найдена");
             }
 
-            return Ok(pizzaById);
-        }
-
-        [HttpPost]
-        public ActionResult CreatePizza(Pizza pizza)
-        {
-            _repositoryServices.AddPizza(pizza);
-
-            return Ok("Пицца успешно добавлена");
         }
 
         [HttpPut]
+        public ActionResult CreatePizza(Pizza pizza)
+        {
+            try
+            {
+                _repositoryServices.AddPizza(pizza);
+
+                return Ok("Пицца успешно добавлена");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Ошибка при добавлении пиццы");
+                return BadRequest("Пицца не была добавлена ");
+
+            }
+           
+        }
+
+        [HttpPost]
         public ActionResult UpdatePizza(Pizza pizza)
         {
-            _repositoryServices.UpdatePizza(pizza);
+            try
+            {
+                _repositoryServices.UpdatePizza(pizza);
 
-            return Ok("Пицца обновлена");
+                return Ok("Пицца обновлена");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Ошибка при обновлении пиццы");
+                return BadRequest("Пицца не была обновлена");
+            }
         }
 
         [HttpDelete("{id}")]
         public ActionResult DeletePizza(int id)
         {
-            _repositoryServices.RemovePizza(id);
+            try
+            {
+                _repositoryServices.RemovePizza(id);
 
-            return Ok("Пицца удалена!");
+                return Ok("Пицца удалена!");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Ошибка при удалении пиццы");
+                return BadRequest("Пицца не была удалена");
+            }
         }
 
     }

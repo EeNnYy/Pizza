@@ -4,10 +4,12 @@ using Infrastructure;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using Web.Logger;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Logging.AddFile(Path.Combine(Directory.GetCurrentDirectory(), "logger.txt"));
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IRepository,Repository >();
 builder.Services.AddScoped<IPizzaServices, PizzaServices>();
