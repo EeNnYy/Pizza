@@ -8,14 +8,22 @@ namespace Domain.Models
 {
     public class Pizza
     {
-        public int Id { get; set; }
+        public Pizza(int id, string title, string source, string description, int price)
+        {
+            Id = id;
+            Title = title;
+            Source = string.IsNullOrEmpty(source) ? null : source;
+            Description = description;
+            Price = price;
+        }
+        public int Id { get; }
 
-        public string Title { get; set; } = null!;
+        public string Title { get; } = null!;
 
-        public string? Source { get; set; }
+        public string? Source { get; }
 
-        public string Description { get; set; } = null!;
+        public string Description { get; } = null!;
 
-        public int Price { get; set; }
+        public int Price { get; }
     }
 }

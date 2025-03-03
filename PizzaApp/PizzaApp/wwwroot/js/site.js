@@ -1,5 +1,5 @@
 ﻿$(document).ready(function () {
-    GetPizzas();
+    LoadPizzas();
 
     $(document).on('click', '#ActionButton, .my-flex-block-new', function () {
         Action(this);
@@ -16,7 +16,8 @@
     });
 });
 
-function GetPizzas() {
+function
+    LoadPizzas() {
     $.ajax({
         url: '/api/pizza',
         type: 'GET',

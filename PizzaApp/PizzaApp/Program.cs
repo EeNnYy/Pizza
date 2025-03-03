@@ -15,7 +15,7 @@ builder.Services.AddScoped<IRepository,Repository >();
 builder.Services.AddScoped<IPizzaServices, PizzaServices>();
 builder.Services.AddHttpClient();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer("Server=DESKTOP-98R6S4O;Database=Pizza;Trusted_Connection=True;TrustServerCertificate=True;"));
+    options.UseSqlServer("Server=DESKTOP-IFKUEUC;Database=Pizza;Trusted_Connection=True;TrustServerCertificate=True;"));
 
 var app = builder.Build();
 
