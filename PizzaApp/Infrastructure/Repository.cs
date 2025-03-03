@@ -24,8 +24,7 @@ namespace Infrastructure
         public bool CreatePizza(Pizza pizza)
         {
             try
-            {
-                if (pizza.Source == "") pizza.Source=null;
+            { 
                 var pizzaEF = new PizzaEF
                 {
                     Title = pizza.Title,
@@ -73,13 +72,7 @@ namespace Infrastructure
         public Pizza FindById(int id)
         {
             var pizzaEF = _context.Pizzas.Find(id);
-            var pizza = new Pizza
-            {
-                Title = pizzaEF.Title,
-                Description = pizzaEF.Description,
-                Price = pizzaEF.Price,
-                Source = pizzaEF.Source,
-            };
+            var pizza = new Pizza(pizzaEF.Id, pizzaEF.Title, pizzaEF.Source, pizzaEF.Description, pizzaEF.Price);
 
             return pizza;
         }
@@ -89,14 +82,8 @@ namespace Infrastructure
             var pizzaEntities = _context.Pizzas.ToList();
 
 
-            var pizzas = pizzaEntities.Select(entity => new Pizza
-            {
-                Id = entity.Id,
-                Title = entity.Title,
-                Price = entity.Price,
-                Description = entity.Description,
-                Source = entity.Source,
-            }).ToList();
+            var pizzas = pizzaEntities.Select(entity => new Pizza(entity.Id,entity.Title,entity.Source,entity.Description,entity.Price))
+                .ToList();
 
             return pizzas;
         }
@@ -105,7 +92,6 @@ namespace Infrastructure
         {
             try
             {
-                if (pizza.Source == "") pizza.Source = null;
                 var updatePizza = _context.Pizzas.Find(pizza.Id);
                 if (updatePizza != null)
                 {
